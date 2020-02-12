@@ -83,6 +83,6 @@ app.route('/articles/:articleTitle')
     });
   });
 
-app.listen(2020, function() {
+app.listen(process.env.PORT || 2020, function() {
   console.log("Server started on port 2020");
 });
