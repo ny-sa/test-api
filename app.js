@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 
-mongoose.connect('mongodb://localhost:27017/wikiDB', {
+mongoose.connect('mongodb+srv://nysa:12345@cluster0-cz3ei.mongodb.net/wikiDB', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
